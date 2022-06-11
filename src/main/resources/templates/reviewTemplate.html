@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${reviewModel.title}">A review</title>
+    <link rel="stylesheet" href="/Styles/reviewStyles.css">
+
+</head>
+<body>
+<header>
+    <h1 th:text="${reviewModel.id}">A Review></h1>
+</header>
+<main>
+    <ul>
+        <p><a href="/review">Reviews Of Coffee</a></p>
+        <div>
+        <li th:text="${reviewModel.title}"></li>
+        <li th:text="${reviewModel.Description}"></li>
+        </div>
+    </ul>
+    <img th:src="${reviewModel.imageUrl}"></img>
+</main>
+<footer>
+    <small>&copy penny Schuenke 2022</small>
+</footer>
+</body>
+</html>
