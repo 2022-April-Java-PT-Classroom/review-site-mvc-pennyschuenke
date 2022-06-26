@@ -12,11 +12,11 @@ public class ReviewRepository {
     Map<Long, Review> reviewList = new HashMap<>();
 
     public ReviewRepository() {
-
+        Review Bell2 = new Review(4L, " The Bell",  "6/05/2022 Creamy with just a hint of mocha","./images/coffee3.jpg");
         Review Bell = new Review(1L, " The Bell",  "6/04/2022 slightly Sweet And Creamy with just a hint of mocha","./images/coffee3.jpg");
         Review Beast = new Review(2L, "the Beast","5/29/2022 sweet strong and full of flavor  ", "/images/coffee1.jpg");
         Review D23 = new Review(3L, "the D23 ","6/2/2022 just what you need to keep you going this is bold and amazing flavor ", "/images/coffee2.jpg");
-
+        reviewList.put(Bell2.getId(), Bell2);
         reviewList.put(Bell.getId(), Bell);
         reviewList.put(Beast.getId(), Beast);
         reviewList.put(D23.getId(), D23);

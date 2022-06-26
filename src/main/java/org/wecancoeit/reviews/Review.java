@@ -2,10 +2,10 @@ package org.wecancoeit.reviews;
 
 public class Review {
 
-    private Long id;
-    private String title;
-    private String description;
-    private String imageUrl;
+    public Long id;
+    public String title;
+    public String description;
+    public String imageUrl;
 
 
 

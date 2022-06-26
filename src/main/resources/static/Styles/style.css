@@ -1,3 +1,5 @@
+
+
 body{
     background-color: rgb(71,135,196);
     box-sizing: border-box;
@@ -11,22 +13,22 @@ html{
     font-family: sans-serif;
 }
 h1{
- text-align: center;
+ text-align: left;
   margin: 2em;
 }
-ul{
-text-align: center;
+div figure img {
+width: 50%;
+border-radius: 10%;
+}
+ul li{
+text-align: left;
   margin: 2em;
 }
 title{
     color:cornflowerblue;
     font-size: large;
 }
-img{
 
-width: 50%
-border-radius:50%
-}
 footer{
 justify-content: center;
     text-align: center;
