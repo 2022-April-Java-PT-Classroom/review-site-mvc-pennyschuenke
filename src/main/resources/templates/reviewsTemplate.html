@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>A List Of All Reviews</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+<header>
+
+    <h1>A List Of Coffee Reviews</h1>
+</header>
+<main>
+    <div>
+    <figure>
+        <img th:src="@{images/cover.jpg}">
+    </figure>
+    </div>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"th:text="${review.title}"></a></li>
+    </ul>
+</main>
+<footer>
+    <small>&copy penny schuenke 2022</small>
+</footer>
+</body>
+</html>
